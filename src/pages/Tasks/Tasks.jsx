@@ -18,7 +18,7 @@ import KanbanBoard from "./KanbanBoard";
 import { useUserContext } from "../../hooks/useUserContext";
 import { useDocument } from "../../hooks/useDocument";
 import { Badge } from "../../shadcn/components/ui/badge";
-import { useUsersContext } from "../../hooks/useUsersContext";
+import  {useUsersContext}  from "../../hooks/useUsersContext.js";
 
 export default function Tasks({ selectedPriority }) {
   const [showNewTaskDialog, setShowNewTaskDialog] = useState(false);

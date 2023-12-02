@@ -11,14 +11,14 @@ import {
   PersonIcon,
 } from "@radix-ui/react-icons";
 import { useNavigate } from "react-router-dom";
-import { useLogout } from "@/hooks/useLogout";
+import { useLogout } from "../hooks/useLogout";
 import Logo from "./Logo";
-import { Separator } from "@/shadcn/components/ui/separator";
+import { Separator } from "../shadcn/components/ui/separator";
 import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/shadcn/components/ui/avatar";
+} from "../shadcn/components/ui/avatar";
 import { useAuthContext } from "../hooks/useAuthContext";
 import LabelSvg from "./Label";
 import getInitials from "../utils/getInitials";

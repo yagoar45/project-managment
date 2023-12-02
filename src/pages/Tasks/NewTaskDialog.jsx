@@ -6,7 +6,7 @@ import {
   DialogTitle,
   DialogTrigger,
   DialogFooter,
-} from "@/shadcn/components/ui/dialog";
+} from "../../shadcn/components/ui/dialog";
 
 import { Input } from "../../shadcn/components/ui/input";
 import { Label } from "../../shadcn/components/ui/label";

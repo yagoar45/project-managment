@@ -1,17 +1,17 @@
-import React, { useState, useRef } from "react";
-import { ModeToggle } from "@/shadcn/components/mode-toggle";
+import { useState, useRef } from "react";
+import { ModeToggle } from "../../shadcn/components/mode-toggle";
 import {
   Avatar,
   AvatarImage,
   AvatarFallback,
-} from "@/shadcn/components/ui/avatar";
-import getInitials from "@/utils/getInitials";
-import { useAuthContext } from "@/hooks/useAuthContext";
-import uploadToStorage from "@/utils/uploadToStorage";
+} from "../../shadcn/components/ui/avatar";
+import getInitials from "../../utils/getInitials";
+import { useAuthContext } from "../../hooks/useAuthContext";
+import uploadToStorage from "../../utils/uploadToStorage";
 import { updateProfile } from "firebase/auth";
-import { auth } from "@/firebase/config";
-import { Input } from "@/shadcn/components/ui/input";
-import { useFirestore } from "@/hooks/useFirestore";
+import { auth } from "../../firebase/config";
+import { Input } from "../../shadcn/components/ui/input";
+import { useFirestore } from "../../hooks/useFirestore";
 
 export default function Profile({ rerender, setRerender }) {
   const { user } = useAuthContext();

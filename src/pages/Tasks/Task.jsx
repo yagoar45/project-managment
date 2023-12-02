@@ -1,6 +1,6 @@
-import { useUsersContext } from "@/hooks/useUsersContext";
+import { useUsersContext } from "../../hooks/useUsersContext";
 import { Badge } from "../../shadcn/components/ui/badge";
-import getInitials from "@/utils/getInitials";
+import getInitials from "../../utils/getInitials";
 import { DotsHorizontalIcon } from "@radix-ui/react-icons";
 import { Draggable } from "react-beautiful-dnd";
 import LabelSvg from "../../components/Label";
@@ -53,7 +53,7 @@ export default function Task({ task, index, columnId }) {
 
   return (
     <Draggable draggableId={task.id} index={index}>
-      {(provided, snapshot) => {
+      {(provided) => {
         return (
           <div
             {...provided.draggableProps}
